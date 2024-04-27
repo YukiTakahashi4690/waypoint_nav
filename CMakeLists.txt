@@ -106,6 +106,13 @@ target_link_libraries(
     ${yaml-cpp_LIBRARIES}
 )
 
+add_executable(waypoint_navigator_with_number src/waypoint_navigator_with_number.cpp)
+target_link_libraries(
+    waypoint_navigator_with_number
+    ${catkin_LIBRARIES}
+    ${yaml-cpp_LIBRARIES}
+)
+
 add_executable(waypoint_saver src/waypoint_saver.cpp)
 target_link_libraries(
     waypoint_saver
